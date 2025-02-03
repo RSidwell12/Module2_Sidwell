@@ -82,7 +82,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 429a484b95998f84eaa98fa068caa5e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popPrefab: {fileID: 0}
+  popPrefab: {fileID: 186482, guid: 9d2dddaae5c812841accc43e4da1fccd, type: 3}
   maxVelocity: 5
   lifetime: 999
   burstOnLifetimeEnd: 0
