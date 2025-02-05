@@ -6,6 +6,7 @@ public class EnemySpawner : MonoBehaviour
 {
 
     public GameObject Enemy;
+    public GameObject Spawner;
     private int timer;
     public int FramesPerSpawn;
 
@@ -20,7 +21,7 @@ public class EnemySpawner : MonoBehaviour
     {
         if (timer > FramesPerSpawn)
         {
-            Instantiate(Enemy);
+            Instantiate(Enemy, Spawner.transform);
             timer = 0;
         }
         timer++;
