@@ -27,6 +27,11 @@ public class PlayerController : MonoBehaviour
 
     // UI object to display winning text.
     public GameObject winTextObject;
+    public GameObject whiteFlag1;
+    public GameObject whiteFlag2;
+    public GameObject door;
+    public GameObject spawner1;
+    public GameObject spawner2;
 
 
     // Start is called before the first frame update
@@ -53,6 +58,11 @@ public class PlayerController : MonoBehaviour
         if (count >= 12)
         {
             winTextObject.SetActive(true);
+            whiteFlag1.gameObject.SetActive(true);
+            whiteFlag2.gameObject.SetActive(true);
+            spawner1.gameObject.SetActive(false);
+            spawner2.gameObject.SetActive(false);
+            door.transform.rotation = Quaternion.Euler(0, -90, 0);
         }
     }
 
